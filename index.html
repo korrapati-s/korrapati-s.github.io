@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body class="w3-content" style="max-width:1300px" data-spy="scroll" data-target="#myScrollspy" data-offset="20" style="position: relative">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -19,7 +19,7 @@
   <nav class="w3-sidebar w3-collapse w3-black w3-animate-left" style="z-index:3; width: 250px" id="mySidebar">
     <div class="w3-black w3-container w3-center"  id="myScrollspy">
       <div class="w3-padding-64">
-        <h1>Welcome!!!</h1>
+        <h1  id="vanish">Welcome!!!</h1>
       </div>
       <div class="w3-padding-16">
         <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i> Close Menu</a>
@@ -155,7 +155,11 @@
     </div>
     <!-- Footer -->
     <footer class="w3-container w3-light-gray">
-      <p> <i>" Your dream has to be bigger than your fear. "</i> </p>
+      <div>
+          <p> <b>" Your dream has to be bigger than your fear. "</b> <i style="position: absolute; right: 0%"><i class="far fa-copyright"></i>  SUDHAMSH KORRAPATI  .</i> </p>
+          <p  ></p>
+      </div>
+
     </footer>
   </div>
 </div>
@@ -165,6 +169,10 @@
 
 
 <script>
+
+  setTimeout(function() {
+    $('#vanish').fadeOut('slow');
+  }, 1500);
 
   // Get the Sidebar
   var mySidebar = document.getElementById("mySidebar");
