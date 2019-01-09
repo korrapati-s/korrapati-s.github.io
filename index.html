@@ -11,13 +11,13 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- First Grid: Logo & About -->
-
   <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
     <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i></button>
   </div>
 
   <nav class="w3-sidebar w3-collapse w3-black w3-animate-left" style="z-index:3; width: 250px" id="mySidebar">
-    <div class="w3-black w3-container w3-center"  id="myScrollspy">
+
+    <div class="w3-container w3-center"  id="myScrollspy">
       <div class="w3-padding-64">
         <h1  id="vanish">Welcome!!!</h1>
       </div>
@@ -34,7 +34,6 @@
 </nav>
 
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
   <div class="w3-main" style="margin-left: 250px">
     <div class="w3-blue-grey w3-container" style="height:700px" id="about">
       <div class="w3-padding-64 w3-center">
@@ -53,7 +52,17 @@
         <p></p>
       </div>
       <div class="w3-row">
-        <h4><b>Graduate Research Assistant</b>, University of Cincinnati <i style="font-size: 80%">(November 2017 - Present)</i> </h4>
+        <h4><b>Graduate Teaching Assistant</b>, University of Cincinnati <i style="font-size: 80%">(January 2019 - present)</i> </h4>
+        <ul class="list-style-type: square;">
+          <li>Responsible for teaching, assisting and evaluating students in the coursed C++ Programming and Digital Design.</li>
+          <li>Held office hours twice a week to clarify and aid students with doubts and uncertainties in these courses.</li>
+          <li>Managed laboratory and evaluated assignments every week. </li>
+          <li>Digital Design concepts: Combinational logic, Design	and verification using Hardware Description Language(HDL) modeling and simulation. </li>
+          <li>Programming for EECE concepts: Systematic software design, correct and maintainable coding, software testing methods.</li>
+        </ul>
+      </div>
+      <div class="w3-row">
+        <h4><b>Graduate Research Assistant</b>, University of Cincinnati <i style="font-size: 80%">(November 2017 - January 2019)</i> </h4>
         <ul class="list-style-type: square;">
           <li>Worked	as	a	Lead	Developer	in	a	cross	cultural	research	team	of	4	to redesign	and	develop	a	monitoring	dashboard	to	track	the	harsh	weather conditions	at	Port	Mann	Bridge,	British Columbia,	Canada.</li>
           <li>Responsible	for	understanding	client	use-cases	and	designing	a	plan	for end	to	end	development	life	cycle.</li>
@@ -193,5 +202,7 @@
       mySidebar.style.display = "none";
       overlayBg.style.display = "none";
   }
+
+
 </script>
 </html>
